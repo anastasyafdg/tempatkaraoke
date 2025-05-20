@@ -10,6 +10,6 @@
     @include('components.card', [
         'imgsrc' => 'images/gambar1.jpg',
         'title' => 'Mikkeu Pangpang Karaoke',
-        'description' => 'Rasakan pengalaman bernyanyi dengan kualitas terbaik di Batam bersama Mikkeu Pangpang Karaoke'    
+        'desc' => 'Rasakan pengalaman bernyanyi dengan kualitas terbaik di Batam bersama Mikkeu Pangpang Karaoke'    
     ])
 @endsection

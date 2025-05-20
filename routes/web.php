@@ -8,6 +8,6 @@ use App\Http\Controllers\ProductController;
 //   return view('welcome');
 // });
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/product', [ProductController::class, 'index']);
