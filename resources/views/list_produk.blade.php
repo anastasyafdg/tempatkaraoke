@@ -32,6 +32,39 @@
             </tbody>
         </table>
     </div>
+    
+    <div class="mt-10 mx-auto max-w-3xl text-center">
+    <h1 class="text-2xl font-bold mb-6">Input Produk</h1>
+
+    <form method="POST" action="{{ route('produk.simpan') }}">
+        @csrf
+        <table class=" w-full text-left border border-gray-300 bg-white shadow-md rounded-lg">
+            <tr>
+                <td class="p-2 font-medium">Nama:</td>
+                <td colspan="3">
+                    <input type="text" class="mt-5 w-full border p-2 rounded" id="nama" name="nama">
+                </td>
+            </tr>
+            <tr>
+                <td class="p-2 font-medium">Deskripsi:</td>
+                <td colspan="3">
+                    <textarea class="w-full border p-2 rounded" id="deskripsi" name="deskripsi"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-2 font-medium">Harga:</td>
+                <td colspan="3">
+                    <input type="number" class="w-full border p-2 rounded mb-5" id="harga" name="harga">
+                </td>
+            </tr>
+        </table>
+
+        <div class="mt-4 text-center">
+            <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white font-semibold px-4 py-2 rounded">
+                Simpan
+            </button>
+        </div>
+    </form>
 </div>
 </div>
 </body>
